@@ -16,6 +16,7 @@ attr_accessor :discount, :total
   
   def apply_discount
     if discount
+      
     
     else
     return "There is no discount to apply."

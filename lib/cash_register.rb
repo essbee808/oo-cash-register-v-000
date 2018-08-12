@@ -11,7 +11,7 @@ attr_accessor :discount, :total, :last_transaction
   def add_item(title, price, quantity = 1)
     quantity.times {@basket << title}
     self.total += price * quantity
-    self.last_transaction
+    self.last_transaction = price * quantity
   end
   
   def apply_discount

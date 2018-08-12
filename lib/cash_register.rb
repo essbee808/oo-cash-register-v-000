@@ -29,5 +29,7 @@ attr_accessor :discount, :total
   def items
     @basket
   end
+  
+  def void_last_transaction
  
 end

@@ -18,7 +18,7 @@ attr_accessor :discount, :total
     if discount
       multiplier = 1 - (@discount.to_f/100)
       @total = multiplier * total
-      @total.to_i
+      @total = @total.to_i
       "After the discount, the total comes to $#{@total}."
     # discount = 20. Convert 20 to 20.0 and then divide by #100. 0.20. multiplier 1 - 0.2 = 0.8
     else

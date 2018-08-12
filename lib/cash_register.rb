@@ -17,7 +17,8 @@ attr_accessor :discount, :total
   def apply_discount
     if discount
       multiplier = 1 - (@discount.to_f/100)
-      @total = multiplier * 
+      @total = multiplier * total
+      @total.to_i
     # discount = 20. Convert 20 to 20.0 and then divide by #100. 0.20. multiplier 1 - 0.2 = 0.8
     else
     return "There is no discount to apply."

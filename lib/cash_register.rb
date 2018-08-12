@@ -1,6 +1,6 @@
 require 'pry'
 class CashRegister
-attr_accessor :discount, :total
+attr_accessor :discount, :total, :last_transaction
   
   def initialize(discount = nil) #=> When you pass in an argument and value is set to nil, that value is the default argument
     @total = 0
@@ -31,6 +31,7 @@ attr_accessor :discount, :total
   end
   
   def void_last_transaction
+    
   end
  
 end

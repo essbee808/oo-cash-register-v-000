@@ -26,7 +26,7 @@ attr_accessor :discount, :total
   end
   
   def items
-    
+    @basket
   end
  
 end

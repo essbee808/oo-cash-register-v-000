@@ -3,7 +3,7 @@ class CashRegister
 attr_accessor :discount, :total
   
 @@basket = {}
-  def initialize(discount = nil)
+  def initialize(discount = nil) #=> When you pass in an argument and value is set to nil, that value is the default argument
     @total = 0
     @discount = 20
   end

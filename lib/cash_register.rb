@@ -15,10 +15,7 @@ attr_accessor :discount, :total
   end
   
   def apply_discount
-    if CashRegister.new(discount = 20)
-    total_discount = @total * self.discount/100
-    @total = @total - total_discount
-    return "After the discount, the total comes to $#{@total}."
+    if discount != nil
     
     else
     return "There is no discount to apply."

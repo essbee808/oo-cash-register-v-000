@@ -24,6 +24,8 @@ attr_accessor :discount, :total
     else
     return "There is no discount to apply."
   end
+  
+  def items
   end
  
 end

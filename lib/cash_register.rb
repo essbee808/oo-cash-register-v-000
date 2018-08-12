@@ -9,7 +9,7 @@ attr_accessor :discount, :total
   end
   
   def add_item(title, price, quantity = 1)
-    @basket[title] = price
+    @basket << title
     self.total += price * quantity
     
   end
